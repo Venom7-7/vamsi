@@ -1,0 +1,74 @@
+ <html>
+    <head>
+        <title>Registration form</title>
+        <style>
+            body{text-align: center;}
+               padding:9px ;
+               background-color: #fff;
+               align-items: center;
+                justify-content: center;
+                background-color: darkturquoise;
+
+            .submit {
+    
+                background-color:darkmagenta;
+                color: #ffff;
+                padding: 8px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                
+            }
+            .submit:hover{
+                background-color: #3e8e41;
+            }
+            .container{
+                width: 50%;
+                margin: 40px auto;
+                padding: 20%;
+                background-color: #f9f9f9;
+                border:1px solid #ccc;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+            .form-group{
+                margin-bottom:20px;
+            }
+            .confirm_password{
+                  border-bottom-color: cornsilk;
+
+            }    
+
+        </style>    
+    </head>
+    <body>
+        <h1><p>REGISTRATION PAGE</p></h1>
+    <div class="container">
+        <form name=form 1>
+        <div class="form-group">
+            <label for="Name">NAME:</label>
+            <input type="text" id="name"><br><br>
+            <label for="password">PASSWORD:</label>
+            <input type="password" id="password"><br><br>
+            <label for="confirm_password">CONFIRM_PASSWORD:</label>
+            <input type="password" id="confirm_password"><br><br>
+            <label for="pincode">PINCODE:</label>
+            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required><br><br>
+            <label for="area">AREA:</label>
+            <input type="text" id="area" name="area" required><br><br>
+            <label for="town">TOWN:</label>
+            <input type="text" id="town" name="town" required><br><br>
+            <label for="district">DISTRICT:</label>
+            <input type="text" id="district" name="district" required><br><br>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email"><br><br>
+            <label for="mobile_no">MOBILE_NO</label>
+            <input type="number" id="mobile_no"><br><br>
+            <div class="button-group">
+            <button type="submit" class="submit">SUBMIT</button>
+        </div>
+        </form>
+    </div>    
+    </body>
+</html>
